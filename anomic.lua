@@ -11,7 +11,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("_CS.Events"):WaitForChild("TeamChanger"):FireServer(unpack(args))
-task(0.5)
+task.wait(0.5)
 local args = {
     [1] = "GetDebounceTime",
     [2] = "Sheriff Station"
